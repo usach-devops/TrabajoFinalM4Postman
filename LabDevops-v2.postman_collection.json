@@ -82,15 +82,15 @@
 			"response": []
 		},
 		{
-			"name": "RetirarSaldo",
+			"name": "RetirarMaximoSaldo",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Retira total Ahorro\", () => {\r",
+							"pm.test(\"Retira Maximo Saldo 150 UF\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.ahorro).to.eql(900000);\r",
+							"  pm.expect(responseJson.ahorro).to.eql(30000000);\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Codigo de estado 200\", () => {\r",
@@ -116,7 +116,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=900000&sueldo=1000000",
+					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=30000000&sueldo=1000000",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -130,7 +130,127 @@
 					"query": [
 						{
 							"key": "ahorro",
-							"value": "900000"
+							"value": "30000000"
+						},
+						{
+							"key": "sueldo",
+							"value": "1000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetirarMinimoSaldo",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Retira Minimo Saldo 35 UF\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.ahorro).to.eql(3000000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Codigo de estado 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Carga util debe ser valida y tener cuerpo\", function () { \r",
+							"     pm.response.to.be.ok; // equivalente a decir validacion sea 200\r",
+							"     pm.response.to.be.withBody; // body tiene que existir\r",
+							"     pm.response.to.be.json; // además que sea un JSON válido\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Valor de Saldo tiene caracter numerico\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.saldo).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=3000000&sueldo=1000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"msdxc",
+						"dxc"
+					],
+					"query": [
+						{
+							"key": "ahorro",
+							"value": "3000000"
+						},
+						{
+							"key": "sueldo",
+							"value": "1000000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RetirarTodoAhorro",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Retira Total de Ahorros\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.ahorro).to.eql(500000);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Codigo de estado 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Carga util debe ser valida y tener cuerpo\", function () { \r",
+							"     pm.response.to.be.ok; // equivalente a decir validacion sea 200\r",
+							"     pm.response.to.be.withBody; // body tiene que existir\r",
+							"     pm.response.to.be.json; // además que sea un JSON válido\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Valor de Saldo tiene caracter numerico\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.saldo).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=500000&sueldo=1000000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"msdxc",
+						"dxc"
+					],
+					"query": [
+						{
+							"key": "ahorro",
+							"value": "500000"
 						},
 						{
 							"key": "sueldo",
@@ -150,7 +270,7 @@
 						"exec": [
 							"pm.test(\"Retiro 150 UF\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.ahorro).to.eql(10000000);\r",
+							"  pm.expect(responseJson.ahorro).to.eql(5000000);\r",
 							"  valor_uf =pm.environment.get(\"_UF\");\r",
 							"  pm.expect(responseJson.dxc).to.eql(150 * valor_uf);\r",
 							"});\r",
@@ -179,7 +299,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=10000000&sueldo=1499000",
+					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=5000000&sueldo=1499000",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -193,7 +313,7 @@
 					"query": [
 						{
 							"key": "ahorro",
-							"value": "10000000"
+							"value": "5000000"
 						},
 						{
 							"key": "sueldo",
@@ -301,7 +421,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=60000000&sueldo=1499000",
+					"raw": "http://localhost:8080/rest/msdxc/dxc?ahorro=60000000&sueldo=1500000",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -319,7 +439,7 @@
 						},
 						{
 							"key": "sueldo",
-							"value": "1499000"
+							"value": "1500000"
 						}
 					]
 				}
