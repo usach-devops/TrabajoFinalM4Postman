@@ -116,10 +116,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=30000000&sueldo=1000000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=30000000&sueldo=1000000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -176,10 +179,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=3000000&sueldo=1000000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=3000000&sueldo=1000000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -236,10 +242,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=500000&sueldo=1000000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=500000&sueldo=1000000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -299,10 +308,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=44000000&sueldo=1500000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=44000000&sueldo=1500000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -363,10 +375,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=900000&sueldo=1000000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=900000&sueldo=1000000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -426,10 +441,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=900000&sueldo=1500000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=900000&sueldo=1500000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -488,10 +506,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=0&sueldo=1000000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=0&sueldo=1000000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -549,10 +570,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=50000000&sueldo=1499999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=50000000&sueldo=1499999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -610,10 +634,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=50000000&sueldo=1500000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=5000000&sueldo=1500000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -624,7 +651,7 @@
 					"query": [
 						{
 							"key": "ahorro",
-							"value": "50000000"
+							"value": "5000000"
 						},
 						{
 							"key": "sueldo",
@@ -671,10 +698,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=50000000&sueldo=1529999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=50000000&sueldo=1529999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -732,10 +762,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=1530000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=1530000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -764,7 +797,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $1.530.000\"\", () => {\r",
+							"pm.test(\"Paga Impuesto sueldo mayor o igual a $1.530.000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -793,10 +826,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=2549999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=2549999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -825,7 +861,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $2.550.000\"), () => {\r",
+							"pm.test(\"Paga Impuesto sueldo mayor o igual a $2.550.000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -854,10 +890,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=2550000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=2550000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -886,7 +925,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $2.550.000\"), () => {\r",
+							"pm.test(\"Paga Impuesto sueldo mayor o igual a $2.550.000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -915,10 +954,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=3569999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=3569999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -976,10 +1018,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=3570000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=3570000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -1037,10 +1082,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=4589999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=4589999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -1098,10 +1146,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=4590000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=4590000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -1159,10 +1210,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=6119999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=6119999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -1220,10 +1274,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=6120000",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=6120000",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -1281,10 +1338,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=15817999",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=15817999",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
@@ -1342,10 +1402,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=15818001",
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=15818001",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"192",
+						"81",
+						"214",
+						"49"
 					],
 					"port": "8085",
 					"path": [
