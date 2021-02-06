@@ -103,10 +103,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Saldo tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.saldo).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
-							"});"
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -166,10 +166,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Saldo tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.saldo).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
-							"});"
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -229,10 +229,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Saldo tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.saldo).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
-							"});"
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -294,9 +294,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de DXC tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.dxc).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -361,9 +360,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de DXC tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.dxc).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -427,10 +425,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de DXC tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json();\r",
-							"  pm.expect(responseJson.dxc).to.be.a(\"number\"); // valida si en el campo Saldo contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -492,11 +490,9 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Saldo tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.saldo).to.be.a(\"number\"); //valida si en el campo Saldo contiene un valor numerico\r",
-							"});\r",
-							""
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -556,11 +552,9 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
-							"});\r",
-							""
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -605,7 +599,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $1.500.000\", () => {\r",
+							"pm.test(\"Paga Impuesto sueldo igual a $1.500.000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -620,9 +614,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -669,7 +662,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $1.500.000\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $1500000 y menor a $1530000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -684,10 +677,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -733,7 +726,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $1.530.000\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $1530000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -748,9 +741,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -797,7 +789,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $1.530.000\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $1530000 y menor a $2550000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -812,10 +804,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -861,7 +853,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $2.550.000\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $2550000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -876,10 +868,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -925,7 +917,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto sueldo mayor o igual a $2.550.000\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $2550000 y menor a $3570000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -940,9 +932,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -989,7 +980,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $3570000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1004,10 +995,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1053,7 +1044,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $3570000 y menor a $4590000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1068,10 +1059,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1117,7 +1108,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $4590000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1132,10 +1123,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1181,7 +1172,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $4590000 y menor a $6120000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1196,9 +1187,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -1245,7 +1235,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $6120000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1260,10 +1250,10 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
@@ -1309,7 +1299,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $6120000 y menor a $15818000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1324,9 +1314,8 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
@@ -1373,7 +1362,7 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Paga Impuesto mayor a $0\", () => {\r",
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $15818000\", () => {\r",
 							"  const responseJson = pm.response.json();\r",
 							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
 							"});\r",
@@ -1388,9 +1377,73 @@
 							"     pm.response.to.be.json; // además que sea un JSON válido\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Valor de Impuesto tiene caracter numerico\", () => {\r",
-							"  const responseJson = pm.response.json()\r",
-							"  pm.expect(responseJson.impuesto).to.be.a(\"number\"); //valida si en el campo impuesto contiene un valor numerico\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.81.214.49:8085/rest/msdxc/dxc?ahorro=60000000&sueldo=15818000",
+					"protocol": "http",
+					"host": [
+						"192",
+						"81",
+						"214",
+						"49"
+					],
+					"port": "8085",
+					"path": [
+						"rest",
+						"msdxc",
+						"dxc"
+					],
+					"query": [
+						{
+							"key": "ahorro",
+							"value": "60000000"
+						},
+						{
+							"key": "sueldo",
+							"value": "15818000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Paga Impuesto factor 0.4",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Paga Impuesto, sueldo mayor o igual a $15818000\", () => {\r",
+							"  const responseJson = pm.response.json();\r",
+							"  pm.expect(responseJson.impuesto).to.greaterThan(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Codigo de estado 200\", () => {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"pm.test(\"Carga util debe ser valida y tener cuerpo\", function () { \r",
+							"     pm.response.to.be.ok; // equivalente a decir validacion sea 200\r",
+							"     pm.response.to.be.withBody; // body tiene que existir\r",
+							"     pm.response.to.be.json; // además que sea un JSON válido\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Tiempo de respuesta es menor que 2000ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(2000);\r",
 							"});\r",
 							""
 						],
